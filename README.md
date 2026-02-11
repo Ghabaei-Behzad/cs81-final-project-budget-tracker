@@ -1,3 +1,27 @@
+// Behzad Ghabaei
+// CS 81 - JavaScript
+// App.js - index.css
+// BudgetTracker App
+// Instructor Seno
+// Feb. 11, 2026
+
+# Project Documentation (README.md)
+
+# Project Summary
+This Personal Budget Tracker is a sophisticated React-based web application designed to help users manage their financial health with precision and ease. It serves as a comprehensive showcase of modern front-end engineering, emphasizing efficient state management and a clean user interface. The application allows users to log both income and expenses, providing a real-time calculation of their total financial standing. By focusing on a "mobile-first" responsive design, the tool ensures that users can track their spending habits whether they are at a desk or on the go.
+
+# Key Features and Functionality
+The application features a real-time financial dashboard that updates instantly as data is entered using React’s reactive state system. It includes robust form validation to prevent data entry errors, ensuring that only positive numbers and descriptive text are accepted into the ledger. Data persistence is handled via the browser's LocalStorage API, meaning that a user's financial history is preserved even after closing the browser or refreshing the page. Additionally, the interface utilizes CSS keyframe animations and conditional styling to provide visual feedback on whether the budget is in a surplus or a deficit.
+
+# Technologies Used
+The core logic of the application is built using React 18, leveraging functional components and hooks like useState for internal data and useEffect for lifecycle management. JavaScript ES6+ features are used extensively, specifically higher-order functions like .filter() and .reduce() for computing totals from data arrays. The user interface is styled using modern CSS3 features, including Flexbox and CSS Grid for layout management and custom variables for consistent design language. For deployment, the project is structured to be hosted on platforms like GitHub Pages or Vercel, utilizing a standard build pipeline to optimize performance.
+
+# Instructions for Use
+To begin using the Budget Tracker, enter a description of your transaction and the dollar amount into the provided input fields. Select whether the entry is "Income" (adding to your balance) or an "Expense" (subtracting from your balance) using the toggle buttons. Click the "Add Transaction" button to save the entry, which will then appear in the history list below and update your total balance automatically. To remove an entry, simply click the small "×" button located on the right side of any transaction in the history list.
+ 
+
+//The comments below are from the previous React App.//
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
