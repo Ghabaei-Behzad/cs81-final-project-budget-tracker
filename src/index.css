@@ -1,3 +1,134 @@
+
+/*
+ * Behzad Ghabaei
+ * CS 81 - JavaScript
+ * final-project-web-app
+ * Instructor Seno
+ * Feb. 11, 2026
+ */
+
+:root {
+  --bg: #f4f7f6;
+  --primary: #4a90e2;
+  --success: #2ecc71;
+  --danger: #e74c3c;
+  --text: #2c3e50;
+}
+
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+.container { max-width: 500px; margin: 40px auto; padding: 20px; }
+
+.header { text-align: center; margin-bottom: 30px; }
+
+.balance-card { 
+  background: white; 
+  padding: 20px; 
+  border-radius: 15px; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+}
+
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
+
+.card { padding: 15px; border-radius: 12px; color: white; text-align: center; }
+.income { background: var(--success); }
+.expense { background: var(--danger); }
+
+.form-section { background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; }
+
+input { 
+  width: 100%; 
+  padding: 12px; 
+  margin: 10px 0; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  box-sizing: border-box; 
+}
+
+.radio-group { display: flex; gap: 10px; margin-bottom: 10px; }
+.radio-group button { flex: 1; padding: 8px; cursor: pointer; border: 1px solid #ddd; border-radius: 8px; }
+.radio-group button.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+.submit-btn { 
+  width: 100%; 
+  padding: 12px; 
+  background: var(--primary); 
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover { transform: translateY(-2px); }
+
+.transaction-list { list-style: none; padding: 0; }
+.item { 
+  background: white; 
+  margin-bottom: 10px; 
+  padding: 15px; 
+  border-radius: 10px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  border-left: 5px solid #ccc;
+  animation: fadeIn 0.4s ease;
+}
+
+.item.income { border-left-color: var(--success); }
+.item.expense { border-left-color: var(--danger); }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.del-btn { background: none; border: none; color: #ccc; cursor: pointer; font-size: 20px; }
+.del-btn:hover { color: var(--danger); }
+.error-msg { color: var(--danger); font-size: 0.8em; }
+
+/* React style code below */
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+/*
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +142,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*/
