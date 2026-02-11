@@ -1,6 +1,7 @@
 // Behzad Ghabaei
 // CS 81 - JavaScript
 // final-project-web-app
+// Personal Budget Tracker
 // Instructor Seno
 // Feb. 11, 2026
 
