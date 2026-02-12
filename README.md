@@ -37,6 +37,7 @@ This can update our total balance. Other useful features are knowing the sum of 
 Our project files include: App.js - BudgetTracker.js - styles.css
 
 ## Screen shot
+<img width="1366" height="677" alt="BudgetTracker" src="https://github.com/user-attachments/assets/a88c2b4b-290d-48a3-b8b0-0321fc9a4cf3" />
 
  
 
