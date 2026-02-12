@@ -7,82 +7,129 @@
  * Feb. 11, 2026
  */
 
+ /* 
+  * Our UI has color.  Green, and red charts and blue buttons
+  * can be accessed by using var(). 
+  */
 :root {
-  --bg: #f4f7f6;
-  --primary: #4a90e2;
-  --success: #2ecc71;
-  --danger: #e74c3c;
-  --text: #2c3e50;
+  --bg: #f4f7f6;        /* light grey back ground, except "Current Balance" chart and "Add New Transaction" chart.*/
+  --primary: #4a90e2;   /* blue buttons for Income, Expense, and Add Trascaction. */
+  --success: #2ecc71;   /* green Income box. */
+  --danger: #e74c3c;    /* red Expense box. */
+  --text: #2c3e50;      /* grey text: "Budget Visualizer." */
+}
 }
 
-body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+body { font-family: 'Inter', sans-serif; 
+      background: var(--bg); 
+      color: var(--text);
+     }
 
-.container { max-width: 500px; margin: 40px auto; padding: 20px; }
+.container { max-width: 500px;    /* 500 px or more preferred to keep the page spead out. */
+            margin: 40px auto;    /* Space from the top of the page. */
+            padding: 20px; }      /* An imaginary frame around the page.*/
 
-.header { text-align: center; margin-bottom: 30px; }
+.header { text-align: center;     /* "Budget Visualizer" and "Current Balanc"e are centered. */
+         margin-bottom: 30px;     /* Space is kept from "Income" chart and "Expense" chart.*/
+        }
 
 .balance-card { 
-  background: white; 
-  padding: 20px; 
-  border-radius: 15px; 
+  background: white;             /* "Current Balance" chart is white.*/
+  padding: 20px;                 /* decides the size of the chart border.*/
+  border-radius: 15px;           /* Rounded border corners. */
   box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
 }
 
-.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
+.stats-grid { 
+             display: grid;                   /* Keeps "Income" and "Expenses" side by side*/
+             grid-template-columns: 1fr 1fr;  /* Keeps them the same size*/
+             gap: 15px;                       /* Keeps a gap between their borders. */
+             margin: 20px 0;                  /* Space kept from "Add New Transaction" below." */
+            }
 
-.card { padding: 15px; border-radius: 12px; color: white; text-align: center; }
-.income { background: var(--success); }
-.expense { background: var(--danger); }
+.card { padding: 15px;        /* Manages the size of our Green and Red card. */
+       border-radius: 12px;   /* Rounded corners.*/
+       color: white;          /* Internal text color. */
+       text-align: center;    /* Internal text position of these colored cards.*/
+      }
+.income { background: var(--success); }  /* Green. */
+.expense { background: var(--danger); }  /* Red. */
 
-.form-section { background: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; }
+.form-section { background: white; 
+               padding: 20px;           /* Determines the size of "Add New Transaction" card. */
+               border-radius: 15px;     /* Rounded corners of input boxes*/
+               margin-bottom: 20px;     /* Distance from "History" table below.*/
+              }
 
 input { 
-  width: 100%; 
-  padding: 12px; 
-  margin: 10px 0; 
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
+  width: 100%;              /* Width of "Description" and "Amount" */
+  padding: 12px;            /* Height of "Description" and "Amount" */
+  margin: 10px 0;           /* Space between "Description" and "Amount" boxes.*/
+  border: 1px solid #ddd;   /* Thickness and the color grey for the border.*/
+  border-radius: 8px;       /* Rounded*/
   box-sizing: border-box; 
 }
 
-.radio-group { display: flex; gap: 10px; margin-bottom: 10px; }
-.radio-group button { flex: 1; padding: 8px; cursor: pointer; border: 1px solid #ddd; border-radius: 8px; }
-.radio-group button.active { background: var(--primary); color: white; border-color: var(--primary); }
+.radio-group { display: flex;       /* Center the "Income" and "Expense" buttons.*/
+              gap: 10px;            /* Space between two buttons.*/
+              margin-bottom: 10px;  /* Space is kept from  the "Add Transaction" button below.*/
+             }
+.radio-group button { flex: 1;                /* "Income" and "Expense" buttons are centered. */
+                     padding: 8px;            /*  Height of each button.*/
+                     cursor: pointer; 
+                     border: 1px solid #ddd;  /* Color and thickness of button borders*/
+                     border-radius: 8px;      /* Rounded buttons*/
+                    }
+.radio-group button.active { background: var(--primary);  /* Back ground color of the active button is blue.*/
+                            color: white;                 /* Text color of the active button.*/
+                            border-color: var(--primary);
+                           }
 
 .submit-btn { 
-  width: 100%; 
-  padding: 12px; 
-  background: var(--primary); 
-  color: white; 
-  border: none; 
-  border-radius: 8px; 
+  width: 100%;                  /* "Add Tansaction" button width.*/
+  padding: 12px;                /* height of button*/
+  background: var(--primary);   /* Blue color for the button.*/
+  color: white;                 /* Internal text color. */
+  border: none;                
+  border-radius: 8px;           
   cursor: pointer;
   transition: transform 0.2s;
 }
 
-.submit-btn:hover { transform: translateY(-2px); }
+.submit-btn:hover {              /* Wiggling effect for "Add Transaction" buton.*/ 
+  transform: translateY(-2px); 
+}
 
-.transaction-list { list-style: none; padding: 0; }
+.transaction-list { list-style: none; padding: 0; }  /* "History" chart width.*/
 .item { 
-  background: white; 
-  margin-bottom: 10px; 
-  padding: 15px; 
-  border-radius: 10px; 
-  display: flex; 
-  justify-content: space-between; 
+  background: white;              /* Color of history chart back ground*/
+  margin-bottom: 10px;            /* Space kept in between each data entry.*/
+  padding: 15px;                  /* Each data entry size.*/
+  border-radius: 10px;            /* rounded corners of chart fields.*/
+  display: flex;                  /* Keeps "Description" and "Amount" on far sides of each other.*/
+  justify-content: space-between; /* Keeps the text separated (Description and Amount)*/
   align-items: center;
-  border-left: 5px solid #ccc;
+  border-left: 5px solid #ccc;    /* colored tabs on left of History chart indicating added or subtracted.*/
   animation: fadeIn 0.4s ease;
 }
 
-.item.income { border-left-color: var(--success); }
-.item.expense { border-left-color: var(--danger); }
+.item.income { border-left-color: var(--success); }  /* Green color for "Income" of left corner border tabs */
+.item.expense { border-left-color: var(--danger); }  /* Red color for "Expenses" of left corner border tabs */
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.del-btn { background: none; border: none; color: #ccc; cursor: pointer; font-size: 20px; }
-.del-btn:hover { color: var(--danger); }
-.error-msg { color: var(--danger); font-size: 0.8em; }
+.del-btn { background: none;      /* Delete button has an X on it.*/
+          border: none; 
+          color: #ccc;            /* color of the "X" text.*/
+          cursor: pointer; 
+          font-size: 20px;        /* Font size of the delete "X" button.*/
+         }
+.del-btn:hover { color: var(--danger); }   /* The delete button mouse hover over color is red.*/
+.error-msg { color: var(--danger); font-size: 0.8em; } 
+/* 
+ * Underneith "Add New Transaction" an error message appears with
+ * red colored text. "Please provide a valid description and a positive amount." 
+*/
