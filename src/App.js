@@ -1,9 +1,8 @@
 // Behzad Ghabaei
 // CS 81 - JavaScript
-// App.js - ContactForm.js
-// Assignment 11A - React Contact Form
+// App.js - BudgetTracker.js
 // Instructor Seno
-// Feb. 10, 2026
+// Feb. 11, 2026
 
 import React from 'react';
 import BudgetTracker from './BudgetTracker';
@@ -11,7 +10,7 @@ import BudgetTracker from './BudgetTracker';
 function App() {
   return (
     <div className="App">
-      <ContactForm />
+      <BudgetTracker />
     </div>
   );
 }
