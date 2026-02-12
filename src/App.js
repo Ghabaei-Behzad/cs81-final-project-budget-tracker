@@ -149,7 +149,7 @@ const App = () => { // const BudgetTracker
           {transactions.map((t) => (
             <li key={t.id} className={`item ${t.type}`}>
               <div className="item-info">
-                <strong>{t.description}</strong>
+                <strong>{t.description + " "}</strong>
                 <small>{t.date}</small>
               </div>
               <div className="item-amount">
