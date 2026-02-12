@@ -21,8 +21,8 @@ To begin using the Budget Tracker, enter a
 1. "Description" in the box of your transaction,
 2. and the dollar "Amount" into the input fields.
 3. Select whether the entry is "Income" (adding to your balance) or an "Expense" (subtracting from your balance) using    the toggle buttons.
-4. Click the "Add Transaction" button to save the entry, which will appear in the "History" list below
-   We will update our total balance automatically.
+4. Click the "Add Transaction" button to save the entry, which will appear in the "History" list below.
+   We can update our total balance automatically. Other useful features are  knowing the sum of the amount of Income      and the sum of expenses. These two charts give a useful analysis of the data entered.
 5.To remove an entry, click the small "×" button located on the right side of each transaction of the "History" list.
  
 
