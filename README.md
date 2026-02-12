@@ -9,26 +9,30 @@
 
 # Project Summary
 This Personal Budget Tracker is a React-based web application designed to help users manage their financial data with (integers or floating) numbers. It serves as a showcase of modern front-end coding, emphasizing hooks and state management and a CSS file for the user interface. The application allows users to log both income and expenses, providing a precise calculation of their total financial data. This tool allows users to track their spending and observe a "red" or "green" color indicator on the provided data list. There are charts that are provided that separate the Profits from Costs with different colors, and the data list provided is saved to storage memory and becomes a data table with dates included of each input transaction. 
-     While developing this project, we used CRUD which means create, read, update and delete.  This manages our data in the development lifecycle. Create means adding new data or records, Read means retrieve data for viewing reports, Update means editing the posts, and Delete means removing unwanted records. We could have added chart.js features and did: npm install chart.js react-chartjs-2.  All that was needed was to add style and add the chart library and chart code. 
+     While developing this project, we used CRUD which means create, read, update and delete.  This manages our data in the development lifecycle. Create means adding new data or records, Read means retrieve data for viewing reports, Update means editing the posts, and Delete means removing unwanted records. We could have installed and added chart.js features. 
      The Project Requirements were fulfilled such as writing the program in React.js and
 including HTML in the BudgetTracker.js form and styles.css for a user friendly interface.
-We used DOM manipulation such as deleting the history, importing useState and useEffect from React
-and allowed interactivity with the user. Lastly, we deployed our files to Github and included this README.md file with four questions answered.
+We used DOM manipulation where we delete the history, also were importing useState and useEffect from React
+which allows interactivity with the user. Lastly, we deployed our files to Github and included this README.md file with four inquiry responses.
 
 # Key Features and Functionality
-The application features a financial dashboard that updates as data is entered using React’s reactive state system. It includes form validation to prevent data entry errors, ensuring that only positive numbers and descriptive text are accepted into the ledger. Data persistence is handled by the browser's LocalStorage API, meaning that a user's financial history is preserved even after closing the browser or refreshing the page. Additionally, the UI utilizes CSS animations like a button that wiggles, and conditional styling like (an active blue button) to provide visual assistance on whether the budget is in a surplus or a deficit.
+The application features a financial dashboard that updates as data is entered using React’s reactive state system. It includes form validation to prevent data entry errors, ensuring that only positive numbers and descriptive text are accepted into the ledger. Data persistence is handled by the browser's LocalStorage API, meaning that a user's financial history is preserved even after closing the browser or refreshing the page. Additionally, the UI utilizes CSS animations like a button that wiggles, and conditional styling like (an active blue button) to provide visual assistance. The colors tell the user when the input is in a surplus or a deficit.
+We have incorporated calculations, using js methods, data persistence with local storage, css with flexbox, and grid, and the Dom can update a list with adding or removing transactions.
 
 # Technologies Used
-The core logic of the application is built using React, functional components and hooks like useState for internal data and useEffect for lifecycle management. JavaScript features, like higher-order functions with methods we learned such as .filter() and .reduce() for obtaining totals from data arrays. The CSS code includes Flexbox and CSS Grid for a nice layout.
+The technology of the application is built using React, functional components and hooks are used, like useState for internal data, and useEffect for lifecycle management. Included are JavaScript features, such as higher-order functions with methods we learned such as .filter() and .reduce() and .map() for obtaining totals from data arrays. The CSS code includes Flexbox and CSS Grid for a nice layout. We incorporated React.js, javascript Es6+, html5, css3.  We included higher order functions like map, filter, and reduce, react hooks like useState, and useEffect, and finally form validation.
 
 # Instructions for Use
-To begin using the Budget Tracker, enter a 
+Install dependencies like "npm install" and run "npm start" then follow these instructions.
+To begin using the Budget Tracker, enter a word or sentence under "Add New Transaction" in the "Description" box. 
 1. Add a "Description" in the box of your transaction,
 2. and add the dollar "Amount" into the next input field.
-3. Select whether the entry is "Income" (adding to your balance) or an "Expense" (subtracting from your balance) using    the toggle buttons.
+3. Select whether the entry is "Income" (adding to your balance) or an "Expense" (subtracting from your balance) using the toggle buttons.
 4. Click the "Add Transaction" button to save the entry, which will appear in the "History" list below.
-   This can update our total balance automatically. Other useful features are knowing the sum of the amount of Income     and the sum of Expenses. These two colored charts (green and red) give a useful analysis of the data we will enter.
-5.To remove an entry, click the small "×" button located on the right side of each transaction of the "History" list.    Each field is also colored red or green.
+   This can update our total balance. Other useful features are knowing the sum of the amount of Income and the sum of Expenses. These two colored charts (green and red) give a useful analysis of the data we will enter.
+5.To remove an entry, click the small "×" button located on the right side of each transaction of the "History" list.  Each box under "History" which is your new list, is also edge colored red or green.
+##  Project files
+Our project files include: App.js - BudgetTracker.js - styles.css
  
 
 //The comments below are from the previous React App. Ignore these comments below//-------------------------
