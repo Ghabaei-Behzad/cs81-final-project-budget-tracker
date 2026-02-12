@@ -18,7 +18,7 @@
   --danger: #e74c3c;    /* red Expense box. */
   --text: #2c3e50;      /* grey text: "Budget Visualizer." */
 }
-}
+
 
 body { font-family: 'Inter', sans-serif; 
       background: var(--bg); 
