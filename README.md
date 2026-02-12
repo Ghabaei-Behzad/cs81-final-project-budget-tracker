@@ -35,6 +35,9 @@ This can update our total balance. Other useful features are knowing the sum of 
 
 ##  Project files
 Our project files include: App.js - BudgetTracker.js - styles.css
+
+## Screen shot
+
  
 
 //The comments below are from the previous React App. Ignore these comments below//-------------------------
