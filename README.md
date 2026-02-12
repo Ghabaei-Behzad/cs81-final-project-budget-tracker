@@ -29,7 +29,7 @@ To begin using the Budget Tracker, enter a word or sentence under "Add New Trans
 2. and add the dollar "Amount" into the next input field.
 3. Select whether the entry is "Income" (adding to your balance) or an "Expense" (subtracting from your balance) using the toggle buttons.
 4. Click the "Add Transaction" button to save the entry, which will appear in the "History" list below.
-   This can update our total balance. Other useful features are knowing the sum of the amount of Income and the sum of Expenses. These two colored charts (green and red) give a useful analysis of the data we will enter.
+This can update our total balance. Other useful features are knowing the sum of the amount of Income and the sum of Expenses. These two colored charts (green and red) give a useful analysis of the data we will enter.
 5.To remove an entry, click the small "×" button located on the right side of each transaction of the "History" list.  Each box under "History" which is your new list, is also edge colored red or green.
 ##  Project files
 Our project files include: App.js - BudgetTracker.js - styles.css
