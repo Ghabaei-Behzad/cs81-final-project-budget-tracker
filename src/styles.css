@@ -29,7 +29,7 @@ body { font-family: 'Inter', sans-serif;
             margin: 40px auto;    /* Space from the top of the page. */
             padding: 20px; }      /* An imaginary frame around the page.*/
 
-.header { text-align: center;     /* "Budget Visualizer" and "Current Balanc"e are centered. */
+.header { text-align: center;     /* "Budget Visualizer" and "Current Balance" are centered. */
          margin-bottom: 30px;     /* Space is kept from "Income" chart and "Expense" chart.*/
         }
 
@@ -80,7 +80,7 @@ input {
                      border: 1px solid #ddd;  /* Color and thickness of button borders*/
                      border-radius: 8px;      /* Rounded buttons*/
                     }
-.radio-group button.active { background: var(--primary);  /* Back ground color of the active button is blue.*/
+.radio-group button.active { background: var(--primary);  /* Background color of the active button is blue.*/
                             color: white;                 /* Text color of the active button.*/
                             border-color: var(--primary);
                            }
@@ -96,13 +96,13 @@ input {
   transition: transform 0.2s;
 }
 
-.submit-btn:hover {              /* Wiggling effect for "Add Transaction" buton.*/ 
+.submit-btn:hover {              /* Wiggle effect for "Add Transaction" buton.*/ 
   transform: translateY(-2px); 
 }
 
 .transaction-list { list-style: none; padding: 0; }  /* "History" chart width.*/
 .item { 
-  background: white;              /* Color of history chart back ground*/
+  background: white;              /* Color of history chart background*/
   margin-bottom: 10px;            /* Space kept in between each data entry.*/
   padding: 15px;                  /* Each data entry size.*/
   border-radius: 10px;            /* rounded corners of chart fields.*/
@@ -127,7 +127,7 @@ input {
           cursor: pointer; 
           font-size: 20px;        /* Font size of the delete "X" button.*/
          }
-.del-btn:hover { color: var(--danger); }   /* The delete button mouse hover over color is red.*/
+.del-btn:hover { color: var(--danger); }   /* The delete button "mouse hover over" color is red.*/
 .error-msg { color: var(--danger); font-size: 0.8em; } 
 /* 
  * Underneith "Add New Transaction" an error message appears with
