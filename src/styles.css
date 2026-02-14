@@ -30,7 +30,7 @@ body { font-family: 'Inter', sans-serif;
             padding: 20px; }      /* An imaginary frame around the page.*/
 
 .header { text-align: center;     /* "Budget Visualizer" and "Current Balance" are centered. */
-         margin-bottom: 30px;     /* Space is kept from "Income" chart and "Expense" chart.*/
+         margin-bottom: 30px;     /* Space is kept from "Income" chart and "Expense" charts.*/
         }
 
 .balance-card { 
@@ -87,7 +87,7 @@ input {
 
 .submit-btn { 
   width: 100%;                  /* "Add Tansaction" button width.*/
-  padding: 12px;                /* height of button*/
+  padding: 12px;                /* height of button.*/
   background: var(--primary);   /* Blue color for the button.*/
   color: white;                 /* Internal text color. */
   border: none;                
@@ -96,20 +96,20 @@ input {
   transition: transform 0.2s;
 }
 
-.submit-btn:hover {              /* Wiggle effect for "Add Transaction" buton.*/ 
+.submit-btn:hover {              /* Wiggle effect for "Add Transaction" button.*/ 
   transform: translateY(-2px); 
 }
 
-.transaction-list { list-style: none; padding: 0; }  /* "History" chart width.*/
+.transaction-list { list-style: none; padding: 0; }  /* "History" table width.*/
 .item { 
-  background: white;              /* Color of history chart background*/
+  background: white;              /* Color of history table background.*/
   margin-bottom: 10px;            /* Space kept in between each data entry.*/
   padding: 15px;                  /* Each data entry size.*/
-  border-radius: 10px;            /* rounded corners of chart fields.*/
+  border-radius: 10px;            /* rounded corners of table fields.*/
   display: flex;                  /* Keeps "Description" and "Amount" on far sides of each other.*/
   justify-content: space-between; /* Keeps the text separated (Description and Amount)*/
   align-items: center;
-  border-left: 5px solid #ccc;    /* colored tabs on left of History chart indicating added or subtracted.*/
+  border-left: 5px solid #ccc;    /* colored tabs on left of History table indicating added or subtracted.*/
   animation: fadeIn 0.4s ease;
 }
 
